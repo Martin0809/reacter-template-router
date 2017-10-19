@@ -1,8 +1,8 @@
 {
-  "name": "name",
+  "name": "{{name}}",
   "version": "1.0.0",
   "description": "{{description}}",
-  "main": "index.js",
+  "author": "{{author}}",
   "dependencies": {
     "axios": "^0.16.2",
     "prop-types": "^15.5.8",
@@ -33,6 +33,5 @@
     "prebuild": "rm -fr dist",
     "build": "webpack --progress --config webpack.prod.config.js"
   },
-  "author": "{{author}}",
   "license": "ISC"
 }
