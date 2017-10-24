@@ -18,6 +18,10 @@
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.0",
+    {{#lint}}
+    "eslint": "^4.9.0",
+    "eslint-plugin-react": "^7.4.0",
+    {{/lint}}
     "extract-text-webpack-plugin": "2.1.0",
     "file-loader": "^0.10.1",
     "html-webpack-plugin": "^2.28.0",
@@ -30,6 +34,9 @@
   },
   "scripts": {
     "start": "webpack-dev-server --progress --color",
+    {{#lint}}
+    "lint": "eslint src --quiet",
+    {{/lint}}
     "prebuild": "rm -fr dist",
     "build": "webpack --progress --config webpack.prod.config.js"
   },

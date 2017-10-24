@@ -23,15 +23,13 @@ module.exports = {
     "author": {
       "type": "string",
       "message": "Author"
+    },
+    "lint": {
+      "type": "confirm",
+      "message": "Use ESLint to lint your code?"
     }
   },
   "filters": {
-    ".eslintrc.js": "lint",
-    ".eslintignore": "lint",
-    "config/test.env.js": "unit || e2e",
-    "test/unit/**/*": "unit",
-    "build/webpack.test.conf.js": "unit",
-    "test/e2e/**/*": "e2e",
-    "src/router/**/*": "router"
+    ".eslintrc.json": "lint"
   }
 };
