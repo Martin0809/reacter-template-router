@@ -5,6 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{name}}</title>
+  {{#mobile}}
+  <script>
+    (function (window, document) {
+      var docEl = document.documentElement
+
+      function setRemUnit () {
+        var rem = docEl.clientWidth / 10
+        docEl.style.fontSize = rem + 'px'
+      }
+
+      setRemUnit()
+      window.addEventListener('resize', setRemUnit)
+      window.addEventListener('pageshow', function (e) {
+        if (e.persisted) {
+          setRemUnit()
+        }
+      })
+    }(window, document))
+  </script>
+  {{/mobile}}
 </head>
 <body>
   <div id="app" />
