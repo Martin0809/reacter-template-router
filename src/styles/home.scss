@@ -2,11 +2,11 @@
   p {
     margin: 20px 0;
     {{#mobile}}
-    margin: 20px 0;
+    margin: 40px 0;
     {{/mobile}}
     font-size: 18px;
     {{#mobile}}
-    font-size: 18px;
+    font-size: 36px;
     {{/mobile}}
   }
 }
