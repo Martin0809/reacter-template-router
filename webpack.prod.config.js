@@ -52,7 +52,7 @@ module.exports = {
                 minimize: true,
                 importLoaders: 2
               }
-            }
+            },
             'postcss-loader',
             'sass-loader'
           ],

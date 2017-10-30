@@ -45,7 +45,7 @@ module.exports = {
             options: {
               importLoaders: 2,
             }
-          }
+          },
           'postcss-loader',
           'sass-loader'
         ],
