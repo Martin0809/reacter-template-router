@@ -38,7 +38,7 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
-        use: ['style-loader', 'css-loader', 'autoprefixer-loader?browsers=last 3 versions', 'sass-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
         test: /\.(eot|gif|jpeg|jpg|png|svg|ttf|woff|woff2)(\?.+)?$/,
