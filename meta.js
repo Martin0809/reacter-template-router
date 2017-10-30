@@ -34,6 +34,7 @@ module.exports = {
     }
   },
   "filters": {
-    ".eslintrc.json": "lint"
+    ".eslintrc.json": "lint",
+    ".mobile": "mobile"
   }
 };
